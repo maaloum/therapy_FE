@@ -84,7 +84,10 @@ const Navbar = () => {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group tap-target">
+          <Link 
+            to="/" 
+            className="flex items-center group tap-target"
+          >
             <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-md">
               <svg
                 className="w-5 h-5 sm:w-6 sm:h-6 text-white"
@@ -100,7 +103,9 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <span className="hidden sm:block text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className={`hidden sm:block text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent ${
+              i18n.language === "ar" ? "mr-3" : "ml-2"
+            }`}>
               JAM
             </span>
           </Link>
