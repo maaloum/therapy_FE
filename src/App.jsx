@@ -11,6 +11,8 @@ import ResetPassword from "./components/Auth/ResetPassword";
 import VerifyEmail from "./components/Auth/VerifyEmail";
 import VerifyEmailPending from "./components/Auth/VerifyEmailPending";
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Donation from "./pages/Donation";
 import ClientDashboard from "./pages/Client/Dashboard";
 import ClientTherapists from "./pages/Client/Therapists";
 import ClientBookings from "./pages/Client/Bookings";
@@ -62,6 +64,8 @@ function App() {
 
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
+              <Route path="about" element={<AboutUs />} />
+              <Route path="donation" element={<Donation />} />
 
               {/* Client Routes */}
               <Route

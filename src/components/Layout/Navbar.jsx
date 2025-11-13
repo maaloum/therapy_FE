@@ -485,6 +485,18 @@ const Navbar = () => {
               </>
             )}
 
+            {/* About Us Link */}
+            <Link
+              to="/about"
+              className={`px-4 py-2 rounded-lg font-medium transition-all ${
+                isActive("/about")
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+              }`}
+            >
+              {t("about.title")}
+            </Link>
+
             {/* Language Switcher - At the end */}
             <div className="flex gap-1 ml-4 p-1 bg-gray-100 rounded-lg">
               <button
@@ -754,6 +766,19 @@ const Navbar = () => {
                   </Link>
                 </>
               )}
+
+              {/* About Us Link */}
+              <Link
+                to="/about"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`px-4 py-3 rounded-lg font-medium transition-all ${
+                  isActive("/about")
+                    ? "bg-blue-600 text-white"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                {t("about.title")}
+              </Link>
 
               {/* Language Switcher - At the end */}
               <div className="flex gap-1 p-1 bg-gray-100 rounded-lg mt-2">
