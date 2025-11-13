@@ -92,25 +92,12 @@ const Login = () => {
         <div className="max-w-md w-full">
           {/* Logo and Header */}
           <div className="text-center mb-8">
-            <Link to="/" className="inline-flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <svg
-                  className="w-7 h-7 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                JAM
-              </span>
+            <Link to="/" className="inline-flex items-center justify-center mb-4">
+              <img
+                src="/logo.jpeg"
+                alt="JAM Logo"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shadow-lg"
+              />
             </Link>
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
               {t("auth.loginTitle")}

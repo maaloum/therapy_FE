@@ -11,7 +11,7 @@ const NewBooking = () => {
   const [searchParams] = useSearchParams();
   const doctorId = searchParams.get("doctorId");
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [fetchingDoctor, setFetchingDoctor] = useState(true);
   const [doctor, setDoctor] = useState(null);
@@ -204,10 +204,12 @@ const NewBooking = () => {
         <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 rounded-2xl p-8 text-white shadow-2xl">
           <Link
             to="/client/therapists"
-            className="inline-flex items-center gap-2 text-blue-100 hover:text-white mb-6 transition-all hover:gap-3"
+            className={`inline-flex items-center gap-2 text-blue-100 hover:text-white mb-6 transition-all hover:gap-3 ${
+              i18n.language === "ar" ? "flex-row-reverse" : ""
+            }`}
           >
             <svg
-              className="w-5 h-5"
+              className={`w-5 h-5 ${i18n.language === "ar" ? "rotate-180" : ""}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

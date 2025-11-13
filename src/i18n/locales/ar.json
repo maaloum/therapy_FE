@@ -41,7 +41,8 @@
     "previous": "السابق",
     "next": "التالي",
     "page": "صفحة",
-    "optional": "اختياري"
+    "optional": "اختياري",
+    "back": "رجوع"
   },
   "auth": {
     "email": "البريد الإلكتروني",
@@ -245,7 +246,8 @@
     "payment_not_completed": "يجب إكمال الدفع قبل وضع علامة على الجلسة كمكتملة",
     "waitingForPayment": "في انتظار الدفع",
     "noPaymentYet": "لم يتم تقديم أي دفعة بعد",
-    "paymentPending": "الدفع في انتظار التحقق"
+    "paymentPending": "الدفع في انتظار التحقق",
+    "bookWith": "احجز جلسة مع"
   },
   "payment": {
     "payNow": "ادفع الآن",

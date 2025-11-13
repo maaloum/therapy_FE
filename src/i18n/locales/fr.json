@@ -41,7 +41,8 @@
     "previous": "Précédent",
     "next": "Suivant",
     "page": "Page",
-    "optional": "Optionnel"
+    "optional": "Optionnel",
+    "back": "Retour"
   },
   "auth": {
     "email": "Email",
@@ -245,7 +246,8 @@
     "payment_not_completed": "Le paiement doit être complété avant de marquer la séance comme terminée",
     "waitingForPayment": "En attente du paiement",
     "noPaymentYet": "Aucun paiement n'a été soumis",
-    "paymentPending": "Paiement en attente de vérification"
+    "paymentPending": "Paiement en attente de vérification",
+    "bookWith": "Réserver une séance avec"
   },
   "payment": {
     "payNow": "Payer maintenant",

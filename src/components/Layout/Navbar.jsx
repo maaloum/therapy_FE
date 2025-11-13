@@ -88,26 +88,11 @@ const Navbar = () => {
             to="/" 
             className="flex items-center group tap-target"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-md">
-              <svg
-                className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                />
-              </svg>
-            </div>
-            <span className={`hidden sm:block text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent ${
-              i18n.language === "ar" ? "mr-3" : "ml-2"
-            }`}>
-              JAM
-            </span>
+            <img
+              src="/logo.jpeg"
+              alt="JAM Logo"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover transform group-hover:scale-110 transition-transform shadow-md"
+            />
           </Link>
 
           {/* Desktop Navigation */}
